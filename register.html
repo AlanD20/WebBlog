@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Blog - Internet Technqiue</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<script defer src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+	<script defer src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+	<script defer src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+    <script defer src="js/config.js"></script>
+    <script defer src="js/register.js"></script>
+  </head>
+  <body class="h-screen" style="background-color: #eee;">
+	<div class="accDetails"></div>
+		<header class="bg-gray-300 py-5">
+			<nav>
+				<ul class="navbar__list flex justify-center gap-6 select-none">
+						<div class="flex m-auto gap-3">
+							<li class="overflow-hidden"><a class="md:p-8 hover:text-pink-600 text-2xl" href="index.html">Home</a></li>
+							<li class="overflow-hidden"><a class="md:p-8 hover:text-pink-600 text-2xl" href="articles.html">Articles</a></li>
+						</div>
+						<div class="userInfo flex m-auto gap-3">
+							<li class="overflow-hidden"><a class="md:p-8 hover:text-pink-600 text-2xl" href="login.html">Login</a></li>
+							<li class="overflow-hidden"><a class="md:p-8 hover:text-pink-600 text-2xl font-semibold" href="register.html">Register</a></li>
+						</div>
+					</ul>
+			</nav>
+	</header>
+	<main class="flex justify-center items-start h-full">
+		<div class="my-6 flex flex-col">
+			<h1 class="text-4xl font-semibold select-none">Registration form</h1>
+      <form class="frm_reg my-12 flex flex-col gap-4 items-center select-none">
+          <p class="frm__err text-red-600 font-semibold w-72"></p>
+          <p class="frm__suc text-green-600 text-xl font-semibold w-72"></p>
+            <input type="text" title="Only letters & numbers are allowed. Minimum 3 characters, Maximum 15 characters" maxlength="15" autocomplete="off" name="name" class="w-72 py-3 px-4 border-b-2 border-white outline-none border-solid focus:border-yellow-700 transition-all duration-500" placeholder="Username">
+            <input type="email" autocomplete="off" name="email" class="w-72 py-3 px-4 border-b-2 border-white outline-none border-solid focus:border-yellow-700 transition-all duration-500" placeholder="Email">
+            <input type="password" autocomplete="off" name="pass" class="w-72 py-3 px-4 border-b-2 border-white outline-none border-solid focus:border-yellow-700 transition-all duration-500" placeholder="Password">
+            <input type="password" autocomplete="off" name="rpass" class="w-72 py-3 px-4 border-b-2 border-white outline-none border-solid focus:border-yellow-700 transition-all duration-500" placeholder="Repeat password">
+            <input type="submit" name="submit" class="self-end py-2 px-5 bg-gray-50 rounded-2xl font-semibold cursor-pointer hover:text-red-700 focus:outline-none ring-gray-600 focus:ring-2 shadow-md " value="Create Account">
+        </form>
+		</div>
+	</main>
+	<footer class="bg-gray-300 py-6 flex justify-center items-center">
+		<div class="font-bold text-gray-600">
+			<p>Copyright reserved &copy; 2021</p>
+			<p class="text-gray-800">Designed & Coded by 
+				<a class=" text-yellow-900 hover:text-red-600" href="https://aland20.github.io/"> Aland</a>
+			</p>
+			<div class="student_name flex items-center gap-2">
+				<p class="text-gray-800">Name:</p><p class="text-yellow-900"> Aland Al-Jaf</p>
+			</div>
+			<div class="student_email flex items-center gap-2">
+				<p class="text-gray-800">Email:</p><p class="text-yellow-900"> aal-jaf1@stu.vistula.edu.pl</p>
+			</div>
+			<div class="student_id flex items-center gap-2">
+				<p class="text-gray-800">Student ID:</p><p class="text-yellow-900"> 52879</p>
+			</div>
+		</div>
+	</footer>
+
+		
+  </body>
+</html>

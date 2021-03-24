@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Blog - Internet Technqiue</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<script defer src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+	<script defer src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+	<script defer src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+    <script defer src="js/config.js"></script>
+    <script defer type="module" src="js/authorizedUser.js"></script>
+    <script defer type="module" src="js/index.js"></script>
+  </head>
+  <body class="h-screen" style="background-color: #eee;">
+	<div class="accDetails"></div>
+		<header class="bg-gray-300 py-5">
+			<nav>
+					<ul class="navbar__list flex justify-center gap-6 select-none">
+						<div class="flex m-auto gap-3">
+							<li class="overflow-hidden"><a class="md:p-8 hover:text-pink-600 text-2xl font-semibold" href="index.html">Home</a></li>
+							<li class="overflow-hidden"><a class="md:p-8 hover:text-pink-600 text-2xl" href="articles.html">Articles</a></li>
+						</div>
+						<div class="userInfo flex m-auto gap-3">
+
+						</div>
+					</ul>
+			</nav>
+	</header>
+	<main class="py-5 px-8 md:px-32 lg:px-64 h-full">
+		<div>
+			<h1 class="break-words text-4xl font-semibold select-none">Welcome to Internet Techniques blog!</h1>
+			<small class="my-4 text-2xl italic select-none">Latest Articles</small>
+		</div>
+		<div class="content flex flex-col">
+			<!-- Articles will be added to this tag -->
+			<!-- <div class="my-7" data-id="${id}">
+					<div
+						<div class="flex justify-between">
+							<div>
+								<h4 class="break-words text-3xl inline font-semibold">${title}</h4>
+								<small class="ml-3 italic">by ${author}</small>
+							</div>
+							<button class="deletePost select-none text-white bg-red-600 cursor-pointer focus:outline-none hover:bg-red-800 py-1 px-3 rounded">Delete</button>
+						</div>
+					<small class="italic select-none">${new Date(time).toLocaleString()}</small>
+					<p class="text-xl ">${body}</p>
+				</div-->
+			
+		</div>
+		
+	</main>
+	<footer class="bg-gray-300 py-6 flex justify-center items-center">
+		<div class="font-bold text-gray-600">
+			<p>Copyright reserved &copy; 2021</p>
+			<p class="text-gray-800">Designed & Coded by 
+				<a class=" text-yellow-900 hover:text-red-600" href="https://aland20.github.io/"> Aland</a>
+			</p>
+			<div class="student_name flex items-center gap-2">
+				<p class="text-gray-800">Name:</p><p class="text-yellow-900"> Aland Al-Jaf</p>
+			</div>
+			<div class="student_email flex items-center gap-2">
+				<p class="text-gray-800">Email:</p><p class="text-yellow-900"> aal-jaf1@stu.vistula.edu.pl</p>
+			</div>
+			<div class="student_id flex items-center gap-2">
+				<p class="text-gray-800">Student ID:</p><p class="text-yellow-900"> 52879</p>
+			</div>
+		</div>
+	</footer>
+
+		
+  </body>
+</html>
